@@ -1,16 +1,30 @@
 #set up course
-#refer Number : [is two Type of class , how many class , class name in react]
-#0            : [1 or 0  (bool)       , 1 - 5 (int)    , Astro (string)     ]
-data = {0:[1,4,"Astrovid"], #
-        1:[1,4,"Bc"], #
-        2:[0,2,"Bio"], #
-        3:[0,4,"Chem"], #
-        4:[1,3,"Circuit"], #
-        5:[0,4,"Es"], #
-        6:[1,4,"Psych"], #
-        7:[1,5,"Zoo"], #
-        8:[1,5,"Stat"] #
+#refer Number : [is two Type of class , how many class , prefix name    , postfix name]
+#0            : [1 or 0  (bool)       , 1 - 5 (int)    , Astro (string) , s (string)  ]
+Astronomy = 0
+BasicsOfCoding = 1
+Biochemistry = 2
+Chemistry = 3
+Circuits = 4
+EnvironmentalScience = 5
+Psychology = 6
+Zoology = 7
+Statistics = 8
 
+
+groupOfSience = [Astronomy,BasicsOfCoding,Chemistry,Circuits,EnvironmentalScience] 
+groupOfLife = [Biochemistry,Zoology,EnvironmentalScience,Chemistry]
+groupOfData = [BasicsOfCoding,Statistics,Psychology,EnvironmentalScience]
+
+data = {0:[1,4,"Astrovid",""], # Astronomy
+        1:[1,4,"Bc",""], # BasicsOfCoding
+        2:[0,2,"Bio",""], # Biochemistry
+        3:[0,4,"Chem",""], # Chemistry
+        4:[1,3,"Circuit",""], # Circuits
+        5:[0,4,"Es","s"], # EnvironmentalScience ***only have student version
+        6:[1,4,"Psych",""], # Psychology
+        7:[1,5,"Zoo",""], # Zoology
+        8:[1,5,"Stat",""] # Statistics
         }
 
 #set up group
@@ -18,8 +32,8 @@ data = {0:[1,4,"Astrovid"], #
 # group of Data (stastic, coding)
 # groupData = [4,5]  (a list)
 
-groupData = [1,4,5] 
-groupSience = [0,1,3,4]
+
+
 
 def addCourseToSet(rSet,group,courseNum):
     if courseNum in group:
@@ -31,23 +45,26 @@ def addCourseToSet(rSet,group,courseNum):
 relation = {}
 for i in data:
     relationSet = set()
-    addCourseToSet(relationSet,groupData,i)
-    addCourseToSet(relationSet,groupSience,i)
+    addCourseToSet(relationSet,groupOfSience,i)
+    addCourseToSet(relationSet,groupOfLife,i)
+    addCourseToSet(relationSet,groupOfData,i)
     relation[i] = relationSet
 print(relation)
 
 
-def getReactCourseName(data,courseNum,isStudent):
-    if data[courseNum][0] == 1:
-        if isStudent is True:
-            return data[courseNum][2] + courseNum + "s"
-        else:
-            return data[courseNum][2] + courseNum + "p"
+def getReactCourseName(data,course,lesson,postfix):
+    if data[course][0] == 1:
+        return data[course][2] + str(lesson) + postfix
     else:
-        return data[courseNum][2] + courseNum
+        return data[course][2] + str(lesson) + data[course][3]
 
 for course in data:
     recomandList = []
-    for lesson in range(data[i][1]):
+    #print(data[course][2])
+    for lesson in range(1,data[course][1]+1):
         #generate 5 recommand course
-        print(lesson)
+        if data[course][0] == 1:
+            print(getReactCourseName(data,course,lesson,"s"))
+            print(getReactCourseName(data,course,lesson,"p"))
+        else:
+            print(getReactCourseName(data,course,lesson,"s"))
