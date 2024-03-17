@@ -1,3 +1,5 @@
+import random
+
 #set up course
 #refer Number : [is two Type of class , how many class , prefix name    , postfix name]
 #0            : [1 or 0  (bool)       , 1 - 5 (int)    , Astro (string) , s (string)  ]
@@ -52,19 +54,37 @@ for i in data:
 print(relation)
 
 
-def getReactCourseName(data,course,lesson,postfix):
-    if data[course][0] == 1:
-        return data[course][2] + str(lesson) + postfix
-    else:
-        return data[course][2] + str(lesson) + data[course][3]
+for i in relation:
+    NotInRelation = []
+    for k in data:
+        if k not in relation[i]:
+            NotInRelation.append(k)
+    relation[i] = random.sample(list(relation[i]),3)
+    relation[i].extend(random.sample(NotInRelation,1))
+
+
+print(relation)
+
+def getReactCourseNameP(data,course,lesson):
+    return data[course][2] + str(lesson) + "p"
+
+def getReactCourseNameS(data,course,lesson):
+    return data[course][2] + str(lesson) + "s"
+
+def getReactCourseName(data,course,lesson):
+    return data[course][2] + str(lesson) + data[course][3]
+
 
 for course in data:
-    recomandList = []
+    
     #print(data[course][2])
     for lesson in range(1,data[course][1]+1):
         #generate 5 recommand course
         if data[course][0] == 1:
-            print(getReactCourseName(data,course,lesson,"s"))
-            print(getReactCourseName(data,course,lesson,"p"))
+            print(getReactCourseNameS(data,course,lesson))
+            recomandList = []
+
+
+            print(getReactCourseNameP(data,course,lesson))
         else:
-            print(getReactCourseName(data,course,lesson,"s"))
+            print(getReactCourseName(data,course,lesson))
