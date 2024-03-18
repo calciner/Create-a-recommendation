@@ -74,17 +74,71 @@ def getReactCourseNameS(data,course,lesson):
 def getReactCourseName(data,course,lesson):
     return data[course][2] + str(lesson) + data[course][3]
 
+def getLessonFromCourseP(data,course):
+    lesson = random.randint(1,data[course][1])
+    return data[course][2]+str(lesson) + "p"
 
+def getLessonFromCourseS(data,course):
+    lesson = random.randint(1,data[course][1])
+    return data[course][2]+str(lesson) + "p"
+
+def getLessonFromCourse(data,course):
+    lesson = random.randint(1,data[course][1])
+    return data[course][2]+str(lesson) + data[course][3]
+
+stemZRecommendList = {}
 for course in data:
-    
-    #print(data[course][2])
     for lesson in range(1,data[course][1]+1):
         #generate 5 recommand course
         if data[course][0] == 1:
-            print(getReactCourseNameS(data,course,lesson))
-            recomandList = []
+            currentCourse = getReactCourseNameS(data,course,lesson)
+            recommendList = {}
+            count = 0
+            if lesson < data[course][1]:
+                recommendList[count] = getReactCourseNameS(data,course,lesson + 1)
+            else:
+                recommendList[count] = getReactCourseNameS(data,course,lesson - 1)
+            for l in relation[course]:
+                count = count +1
+                recommendList[count] = getLessonFromCourseS(data,l)
+            
+            stemZRecommendList[currentCourse] = recommendList
 
 
-            print(getReactCourseNameP(data,course,lesson))
+            currentCourse = getReactCourseNameP(data,course,lesson)
+            recommendList = {}
+            count = 0
+            if lesson < data[course][1]:
+                recommendList[count] = getReactCourseNameP(data,course,lesson + 1)
+            else:
+                recommendList[count] = getReactCourseNameP(data,course,lesson - 1)
+            for l in relation[course]:
+                count = count +1
+                recommendList[count] = getLessonFromCourseP(data,l)
+            
+            stemZRecommendList[currentCourse] = recommendList
         else:
-            print(getReactCourseName(data,course,lesson))
+            currentCourse = getReactCourseNameP(data,course,lesson)
+            recommendList = {}
+            count = 0
+            if lesson < data[course][1]:
+                recommendList[count] = getReactCourseName(data,course,lesson + 1)
+            else:
+                recommendList[count] = getReactCourseName(data,course,lesson - 1)
+            for l in relation[course]:
+                count = count +1
+                recommendList[count] = getLessonFromCourse(data,l)
+            
+            stemZRecommendList[currentCourse] = recommendList
+
+print(stemZRecommendList)
+
+import json
+
+filename = "data.json"
+
+
+with open(filename, "w") as json_file:
+    json.dump(stemZRecommendList, json_file,indent=4)
+
+print("JSON file has been generated.")
