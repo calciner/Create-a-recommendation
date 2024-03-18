@@ -118,7 +118,7 @@ for course in data:
             
             stemZRecommendList[currentCourse] = recommendList
         else:
-            currentCourse = getReactCourseNameP(data,course,lesson)
+            currentCourse = getReactCourseName(data,course,lesson)
             recommendList = {}
             count = 0
             if lesson < data[course][1]:
