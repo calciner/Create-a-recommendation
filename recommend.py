@@ -1,8 +1,6 @@
 import random
 
-#set up course
-#refer Number : [is two Type of class , how many class , prefix name    , postfix name]
-#0            : [1 or 0  (bool)       , 1 - 5 (int)    , Astro (string) , s (string)  ]
+# map course to a number.
 Astronomy = 0
 BasicsOfCoding = 1
 Biochemistry = 2
@@ -14,10 +12,14 @@ Zoology = 7
 Statistics = 8
 
 
+#set up group
 groupOfSience = [Astronomy,BasicsOfCoding,Chemistry,Circuits,EnvironmentalScience] 
 groupOfLife = [Biochemistry,Zoology,EnvironmentalScience,Chemistry]
 groupOfData = [BasicsOfCoding,Statistics,Psychology,EnvironmentalScience]
 
+#set up course
+#refer Number : [is two Type of class , how many class , prefix name    , postfix name]
+#0            : [1 or 0  (bool)       , 1 - 5 (int)    , Astro (string) , s (string)  ]
 data = {0:[1,4,"Astrovid",""], # Astronomy
         1:[1,4,"Bc",""], # BasicsOfCoding
         2:[0,2,"Bio",""], # Biochemistry
@@ -29,14 +31,9 @@ data = {0:[1,4,"Astrovid",""], # Astronomy
         8:[1,5,"Stat",""] # Statistics
         }
 
-#set up group
-#exaple:
-# group of Data (stastic, coding)
-# groupData = [4,5]  (a list)
 
 
-
-
+#add one course to the relationship set to make sure they a not repeat.
 def addCourseToSet(rSet,group,courseNum):
     if courseNum in group:
         for k in group:
@@ -44,6 +41,7 @@ def addCourseToSet(rSet,group,courseNum):
                 rSet.add(k)
 
 
+#collect all the courese have the relationship with target course.
 relation = {}
 for i in data:
     relationSet = set()
@@ -53,7 +51,7 @@ for i in data:
     relation[i] = relationSet
 print(relation)
 
-
+#format relation with 3 course in the relation, 1 course pick from other that not in the relation set.
 for i in relation:
     NotInRelation = []
     for k in data:
@@ -86,11 +84,14 @@ def getLessonFromCourse(data,course):
     lesson = random.randint(1,data[course][1])
     return data[course][2]+str(lesson) + data[course][3]
 
+
+#base on the relation, create the recommendation for every single course.
 stemZRecommendList = {}
 for course in data:
     for lesson in range(1,data[course][1]+1):
         #generate 5 recommand course
         if data[course][0] == 1:
+            #parent course
             currentCourse = getReactCourseNameS(data,course,lesson)
             recommendList = {}
             count = 0
@@ -104,7 +105,7 @@ for course in data:
             
             stemZRecommendList[currentCourse] = recommendList
 
-
+            #student course
             currentCourse = getReactCourseNameP(data,course,lesson)
             recommendList = {}
             count = 0
@@ -118,6 +119,7 @@ for course in data:
             
             stemZRecommendList[currentCourse] = recommendList
         else:
+            #course without mark of student or parent.
             currentCourse = getReactCourseName(data,course,lesson)
             recommendList = {}
             count = 0
@@ -135,9 +137,8 @@ print(stemZRecommendList)
 
 import json
 
+#out put result as json file.
 filename = "data.json"
-
-
 with open(filename, "w") as json_file:
     json.dump(stemZRecommendList, json_file,indent=4)
 
