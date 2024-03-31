@@ -1,422 +1,422 @@
 {
     "Astrovid1s": {
         "0": "Astrovid2s",
-        "1": "Chem1p",
-        "2": "Circuit2p",
-        "3": "Bc1p",
-        "4": "Psych3p"
+        "1": "Bc2s",
+        "2": "Circuit2s",
+        "3": "Es2s",
+        "4": "Psych3s"
     },
     "Astrovid1p": {
         "0": "Astrovid2p",
-        "1": "Chem2p",
-        "2": "Circuit1p",
-        "3": "Bc3p",
-        "4": "Psych1p"
+        "1": "Bc3p",
+        "2": "Circuit3p",
+        "3": "Es4s",
+        "4": "Psych3p"
     },
     "Astrovid2s": {
         "0": "Astrovid3s",
-        "1": "Chem1p",
-        "2": "Circuit1p",
-        "3": "Bc2p",
-        "4": "Psych4p"
+        "1": "Bc1s",
+        "2": "Circuit1s",
+        "3": "Es2s",
+        "4": "Psych3s"
     },
     "Astrovid2p": {
         "0": "Astrovid3p",
-        "1": "Chem4p",
+        "1": "Bc4p",
         "2": "Circuit2p",
-        "3": "Bc4p",
+        "3": "Es3s",
         "4": "Psych3p"
     },
     "Astrovid3s": {
         "0": "Astrovid4s",
-        "1": "Chem2p",
-        "2": "Circuit2p",
-        "3": "Bc4p",
-        "4": "Psych4p"
+        "1": "Bc1s",
+        "2": "Circuit2s",
+        "3": "Es4s",
+        "4": "Psych1s"
     },
     "Astrovid3p": {
         "0": "Astrovid4p",
-        "1": "Chem2p",
-        "2": "Circuit2p",
-        "3": "Bc2p",
-        "4": "Psych4p"
+        "1": "Bc3p",
+        "2": "Circuit3p",
+        "3": "Es4s",
+        "4": "Psych1p"
     },
     "Astrovid4s": {
         "0": "Astrovid3s",
-        "1": "Chem3p",
-        "2": "Circuit2p",
-        "3": "Bc2p",
-        "4": "Psych1p"
+        "1": "Bc4s",
+        "2": "Circuit1s",
+        "3": "Es4s",
+        "4": "Psych4s"
     },
     "Astrovid4p": {
         "0": "Astrovid3p",
-        "1": "Chem3p",
+        "1": "Bc4p",
         "2": "Circuit2p",
-        "3": "Bc3p",
+        "3": "Es4s",
         "4": "Psych1p"
     },
     "Bc1s": {
         "0": "Bc2s",
-        "1": "Chem3p",
-        "2": "Circuit2p",
-        "3": "Psych2p",
-        "4": "Zoo1p"
+        "1": "Stat4s",
+        "2": "Es1s",
+        "3": "Circuit1s",
+        "4": "Zoo5s"
     },
     "Bc1p": {
         "0": "Bc2p",
-        "1": "Chem1p",
-        "2": "Circuit1p",
-        "3": "Psych1p",
-        "4": "Zoo3p"
+        "1": "Stat2p",
+        "2": "Es3s",
+        "3": "Circuit1p",
+        "4": "Zoo1p"
     },
     "Bc2s": {
         "0": "Bc3s",
-        "1": "Chem2p",
-        "2": "Circuit2p",
-        "3": "Psych1p",
-        "4": "Zoo5p"
+        "1": "Stat1s",
+        "2": "Es3s",
+        "3": "Circuit1s",
+        "4": "Zoo5s"
     },
     "Bc2p": {
         "0": "Bc3p",
-        "1": "Chem2p",
-        "2": "Circuit3p",
-        "3": "Psych4p",
-        "4": "Zoo4p"
+        "1": "Stat5p",
+        "2": "Es2s",
+        "3": "Circuit2p",
+        "4": "Zoo2p"
     },
     "Bc3s": {
         "0": "Bc4s",
-        "1": "Chem3p",
-        "2": "Circuit2p",
-        "3": "Psych4p",
-        "4": "Zoo4p"
+        "1": "Stat4s",
+        "2": "Es1s",
+        "3": "Circuit2s",
+        "4": "Zoo2s"
     },
     "Bc3p": {
         "0": "Bc4p",
-        "1": "Chem2p",
-        "2": "Circuit2p",
-        "3": "Psych1p",
-        "4": "Zoo4p"
+        "1": "Stat3p",
+        "2": "Es1s",
+        "3": "Circuit2p",
+        "4": "Zoo1p"
     },
     "Bc4s": {
         "0": "Bc3s",
-        "1": "Chem2p",
-        "2": "Circuit3p",
-        "3": "Psych2p",
-        "4": "Zoo4p"
+        "1": "Stat3s",
+        "2": "Es2s",
+        "3": "Circuit3s",
+        "4": "Zoo1s"
     },
     "Bc4p": {
         "0": "Bc3p",
-        "1": "Chem3p",
-        "2": "Circuit2p",
-        "3": "Psych3p",
-        "4": "Zoo4p"
+        "1": "Stat1p",
+        "2": "Es2s",
+        "3": "Circuit3p",
+        "4": "Zoo3p"
     },
     "Bio1": {
         "0": "Bio2",
-        "1": "Es3s",
-        "2": "Chem3",
-        "3": "Zoo3",
-        "4": "Psych3"
+        "1": "Zoo3s",
+        "2": "Chem4",
+        "3": "Es3s",
+        "4": "Stat2s"
     },
     "Bio2": {
         "0": "Bio1",
-        "1": "Es4s",
-        "2": "Chem2",
-        "3": "Zoo5",
-        "4": "Psych3"
+        "1": "Zoo2s",
+        "2": "Chem1",
+        "3": "Es4s",
+        "4": "Stat3s"
     },
     "Chem1": {
         "0": "Chem2",
-        "1": "Bio1",
-        "2": "Circuit2",
-        "3": "Bc2",
-        "4": "Psych3"
+        "1": "Circuit1s",
+        "2": "Bio1",
+        "3": "Zoo4s",
+        "4": "Stat4s"
     },
     "Chem2": {
         "0": "Chem3",
-        "1": "Bio2",
-        "2": "Circuit2",
-        "3": "Bc2",
-        "4": "Psych4"
+        "1": "Circuit2s",
+        "2": "Bio2",
+        "3": "Zoo3s",
+        "4": "Stat1s"
     },
     "Chem3": {
         "0": "Chem4",
-        "1": "Bio2",
-        "2": "Circuit3",
-        "3": "Bc3",
-        "4": "Psych2"
+        "1": "Circuit3s",
+        "2": "Bio1",
+        "3": "Zoo4s",
+        "4": "Stat5s"
     },
     "Chem4": {
         "0": "Chem3",
-        "1": "Bio1",
-        "2": "Circuit2",
-        "3": "Bc2",
-        "4": "Psych1"
+        "1": "Circuit1s",
+        "2": "Bio2",
+        "3": "Zoo1s",
+        "4": "Stat5s"
     },
     "Circuit1s": {
         "0": "Circuit2s",
-        "1": "Astrovid4p",
-        "2": "Bc1p",
-        "3": "Es2p",
-        "4": "Stat2p"
+        "1": "Bc2s",
+        "2": "Es1s",
+        "3": "Chem3",
+        "4": "Zoo1s"
     },
     "Circuit1p": {
         "0": "Circuit2p",
-        "1": "Astrovid4p",
-        "2": "Bc2p",
-        "3": "Es3p",
-        "4": "Stat5p"
+        "1": "Bc3p",
+        "2": "Es2s",
+        "3": "Chem4",
+        "4": "Zoo4p"
     },
     "Circuit2s": {
         "0": "Circuit3s",
-        "1": "Astrovid1p",
-        "2": "Bc2p",
-        "3": "Es3p",
-        "4": "Stat4p"
+        "1": "Bc4s",
+        "2": "Es2s",
+        "3": "Chem3",
+        "4": "Zoo4s"
     },
     "Circuit2p": {
         "0": "Circuit3p",
-        "1": "Astrovid1p",
-        "2": "Bc1p",
-        "3": "Es3p",
-        "4": "Stat3p"
+        "1": "Bc2p",
+        "2": "Es3s",
+        "3": "Chem3",
+        "4": "Zoo2p"
     },
     "Circuit3s": {
         "0": "Circuit2s",
-        "1": "Astrovid1p",
-        "2": "Bc2p",
-        "3": "Es3p",
-        "4": "Stat4p"
+        "1": "Bc2s",
+        "2": "Es3s",
+        "3": "Chem3",
+        "4": "Zoo4s"
     },
     "Circuit3p": {
         "0": "Circuit2p",
-        "1": "Astrovid1p",
-        "2": "Bc1p",
-        "3": "Es3p",
-        "4": "Stat3p"
+        "1": "Bc3p",
+        "2": "Es4s",
+        "3": "Chem4",
+        "4": "Zoo5p"
     },
     "Es1s": {
         "0": "Es2s",
-        "1": "Circuit2",
-        "2": "Bc1",
-        "3": "Chem1",
-        "4": "Es3s"
+        "1": "Bc3s",
+        "2": "Circuit1s",
+        "3": "Astrovid1s",
+        "4": "Es2s"
     },
     "Es2s": {
         "0": "Es3s",
-        "1": "Circuit1",
-        "2": "Bc1",
-        "3": "Chem3",
+        "1": "Bc4s",
+        "2": "Circuit2s",
+        "3": "Astrovid2s",
         "4": "Es3s"
     },
     "Es3s": {
         "0": "Es4s",
-        "1": "Circuit3",
-        "2": "Bc3",
-        "3": "Chem3",
-        "4": "Es2s"
+        "1": "Bc2s",
+        "2": "Circuit3s",
+        "3": "Astrovid3s",
+        "4": "Es4s"
     },
     "Es4s": {
         "0": "Es3s",
-        "1": "Circuit2",
-        "2": "Bc1",
-        "3": "Chem2",
+        "1": "Bc1s",
+        "2": "Circuit1s",
+        "3": "Astrovid1s",
         "4": "Es3s"
     },
     "Psych1s": {
         "0": "Psych2s",
-        "1": "Bc3p",
-        "2": "Stat5p",
-        "3": "Es2p",
-        "4": "Bio1p"
+        "1": "Stat3s",
+        "2": "Bc4s",
+        "3": "Es4s",
+        "4": "Psych4s"
     },
     "Psych1p": {
         "0": "Psych2p",
-        "1": "Bc2p",
-        "2": "Stat3p",
-        "3": "Es1p",
-        "4": "Bio1p"
+        "1": "Stat4p",
+        "2": "Bc4p",
+        "3": "Es2s",
+        "4": "Psych3p"
     },
     "Psych2s": {
         "0": "Psych3s",
-        "1": "Bc1p",
-        "2": "Stat2p",
-        "3": "Es3p",
-        "4": "Bio1p"
+        "1": "Stat3s",
+        "2": "Bc3s",
+        "3": "Es3s",
+        "4": "Psych3s"
     },
     "Psych2p": {
         "0": "Psych3p",
-        "1": "Bc2p",
-        "2": "Stat5p",
-        "3": "Es3p",
-        "4": "Bio1p"
+        "1": "Stat4p",
+        "2": "Bc3p",
+        "3": "Es2s",
+        "4": "Psych2p"
     },
     "Psych3s": {
         "0": "Psych4s",
-        "1": "Bc1p",
-        "2": "Stat3p",
-        "3": "Es2p",
-        "4": "Bio1p"
+        "1": "Stat2s",
+        "2": "Bc3s",
+        "3": "Es4s",
+        "4": "Psych3s"
     },
     "Psych3p": {
         "0": "Psych4p",
-        "1": "Bc1p",
-        "2": "Stat1p",
-        "3": "Es3p",
-        "4": "Bio2p"
+        "1": "Stat1p",
+        "2": "Bc2p",
+        "3": "Es2s",
+        "4": "Psych3p"
     },
     "Psych4s": {
         "0": "Psych3s",
-        "1": "Bc2p",
-        "2": "Stat4p",
-        "3": "Es2p",
-        "4": "Bio2p"
+        "1": "Stat2s",
+        "2": "Bc2s",
+        "3": "Es4s",
+        "4": "Psych4s"
     },
     "Psych4p": {
         "0": "Psych3p",
-        "1": "Bc4p",
-        "2": "Stat4p",
-        "3": "Es1p",
-        "4": "Bio2p"
+        "1": "Stat5p",
+        "2": "Bc3p",
+        "3": "Es1s",
+        "4": "Psych3p"
     },
     "Zoo1s": {
         "0": "Zoo2s",
-        "1": "Bio1p",
-        "2": "Chem1p",
-        "3": "Es1p",
-        "4": "Stat2p"
+        "1": "Es3s",
+        "2": "Bio1",
+        "3": "Chem1",
+        "4": "Psych3s"
     },
     "Zoo1p": {
         "0": "Zoo2p",
-        "1": "Bio2p",
-        "2": "Chem4p",
-        "3": "Es1p",
-        "4": "Stat1p"
+        "1": "Es2s",
+        "2": "Bio2",
+        "3": "Chem4",
+        "4": "Psych3p"
     },
     "Zoo2s": {
         "0": "Zoo3s",
-        "1": "Bio1p",
-        "2": "Chem4p",
-        "3": "Es3p",
-        "4": "Stat5p"
+        "1": "Es4s",
+        "2": "Bio1",
+        "3": "Chem3",
+        "4": "Psych4s"
     },
     "Zoo2p": {
         "0": "Zoo3p",
-        "1": "Bio2p",
-        "2": "Chem3p",
-        "3": "Es3p",
-        "4": "Stat4p"
+        "1": "Es3s",
+        "2": "Bio2",
+        "3": "Chem3",
+        "4": "Psych4p"
     },
     "Zoo3s": {
         "0": "Zoo4s",
-        "1": "Bio1p",
-        "2": "Chem3p",
-        "3": "Es3p",
-        "4": "Stat4p"
+        "1": "Es1s",
+        "2": "Bio1",
+        "3": "Chem4",
+        "4": "Psych2s"
     },
     "Zoo3p": {
         "0": "Zoo4p",
-        "1": "Bio2p",
-        "2": "Chem4p",
-        "3": "Es2p",
-        "4": "Stat1p"
+        "1": "Es4s",
+        "2": "Bio1",
+        "3": "Chem3",
+        "4": "Psych1p"
     },
     "Zoo4s": {
         "0": "Zoo5s",
-        "1": "Bio2p",
-        "2": "Chem1p",
-        "3": "Es3p",
-        "4": "Stat5p"
+        "1": "Es2s",
+        "2": "Bio1",
+        "3": "Chem4",
+        "4": "Psych3s"
     },
     "Zoo4p": {
         "0": "Zoo5p",
-        "1": "Bio1p",
-        "2": "Chem1p",
-        "3": "Es4p",
-        "4": "Stat3p"
+        "1": "Es3s",
+        "2": "Bio2",
+        "3": "Chem1",
+        "4": "Psych3p"
     },
     "Zoo5s": {
         "0": "Zoo4s",
-        "1": "Bio2p",
-        "2": "Chem4p",
-        "3": "Es1p",
-        "4": "Stat4p"
+        "1": "Es2s",
+        "2": "Bio2",
+        "3": "Chem2",
+        "4": "Psych3s"
     },
     "Zoo5p": {
         "0": "Zoo4p",
-        "1": "Bio2p",
-        "2": "Chem2p",
-        "3": "Es1p",
-        "4": "Stat5p"
+        "1": "Es3s",
+        "2": "Bio1",
+        "3": "Chem4",
+        "4": "Psych3p"
     },
     "Stat1s": {
         "0": "Stat2s",
-        "1": "Es1p",
-        "2": "Psych1p",
-        "3": "Bc2p",
-        "4": "Stat3p"
+        "1": "Es3s",
+        "2": "Bc1s",
+        "3": "Psych3s",
+        "4": "Stat1s"
     },
     "Stat1p": {
         "0": "Stat2p",
-        "1": "Es2p",
-        "2": "Psych1p",
-        "3": "Bc4p",
-        "4": "Stat5p"
+        "1": "Es1s",
+        "2": "Bc4p",
+        "3": "Psych4p",
+        "4": "Stat2p"
     },
     "Stat2s": {
         "0": "Stat3s",
-        "1": "Es3p",
-        "2": "Psych4p",
-        "3": "Bc1p",
-        "4": "Stat2p"
+        "1": "Es4s",
+        "2": "Bc1s",
+        "3": "Psych1s",
+        "4": "Stat4s"
     },
     "Stat2p": {
         "0": "Stat3p",
-        "1": "Es4p",
-        "2": "Psych2p",
-        "3": "Bc2p",
+        "1": "Es1s",
+        "2": "Bc4p",
+        "3": "Psych3p",
         "4": "Stat3p"
     },
     "Stat3s": {
         "0": "Stat4s",
-        "1": "Es4p",
-        "2": "Psych3p",
-        "3": "Bc1p",
-        "4": "Stat1p"
+        "1": "Es1s",
+        "2": "Bc4s",
+        "3": "Psych1s",
+        "4": "Stat2s"
     },
     "Stat3p": {
         "0": "Stat4p",
-        "1": "Es3p",
-        "2": "Psych4p",
-        "3": "Bc3p",
-        "4": "Stat2p"
+        "1": "Es3s",
+        "2": "Bc2p",
+        "3": "Psych1p",
+        "4": "Stat3p"
     },
     "Stat4s": {
         "0": "Stat5s",
-        "1": "Es4p",
-        "2": "Psych2p",
-        "3": "Bc1p",
-        "4": "Stat4p"
+        "1": "Es1s",
+        "2": "Bc4s",
+        "3": "Psych4s",
+        "4": "Stat5s"
     },
     "Stat4p": {
         "0": "Stat5p",
-        "1": "Es4p",
-        "2": "Psych4p",
-        "3": "Bc1p",
-        "4": "Stat4p"
+        "1": "Es4s",
+        "2": "Bc1p",
+        "3": "Psych4p",
+        "4": "Stat3p"
     },
     "Stat5s": {
         "0": "Stat4s",
-        "1": "Es1p",
-        "2": "Psych2p",
-        "3": "Bc3p",
-        "4": "Stat1p"
+        "1": "Es4s",
+        "2": "Bc1s",
+        "3": "Psych1s",
+        "4": "Stat2s"
     },
     "Stat5p": {
         "0": "Stat4p",
-        "1": "Es1p",
-        "2": "Psych4p",
-        "3": "Bc2p",
-        "4": "Stat1p"
+        "1": "Es4s",
+        "2": "Bc2p",
+        "3": "Psych1p",
+        "4": "Stat4p"
     }
 }

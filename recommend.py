@@ -72,17 +72,22 @@ def getReactCourseNameS(data,course,lesson):
 def getReactCourseName(data,course,lesson):
     return data[course][2] + str(lesson) + data[course][3]
 
-def getLessonFromCourseP(data,course):
-    lesson = random.randint(1,data[course][1])
-    return data[course][2]+str(lesson) + "p"
 
-def getLessonFromCourseS(data,course):
-    lesson = random.randint(1,data[course][1])
-    return data[course][2]+str(lesson) + "p"
+# def getLessonFromCourseP(data,course):
+#     lesson = random.randint(1,data[course][1])
+#     return data[course][2]+str(lesson) + "p"
 
-def getLessonFromCourse(data,course):
-    lesson = random.randint(1,data[course][1])
-    return data[course][2]+str(lesson) + data[course][3]
+# def getLessonFromCourseS(data,course):
+#     lesson = random.randint(1,data[course][1])
+#     return data[course][2]+str(lesson) + "s"
+
+def getLessonFromCourse(data,course,postfix):
+    if data[course][0] == 1:
+        lesson = random.randint(1,data[course][1])
+        return data[course][2]+str(lesson) + postfix
+    else:
+        lesson = random.randint(1,data[course][1])
+        return data[course][2]+str(lesson) + data[course][3]
 
 
 #base on the relation, create the recommendation for every single course.
@@ -101,7 +106,7 @@ for course in data:
                 recommendList[count] = getReactCourseNameS(data,course,lesson - 1)
             for l in relation[course]:
                 count = count +1
-                recommendList[count] = getLessonFromCourseS(data,l)
+                recommendList[count] = getLessonFromCourse(data,l,"s")
             
             stemZRecommendList[currentCourse] = recommendList
 
@@ -115,7 +120,7 @@ for course in data:
                 recommendList[count] = getReactCourseNameP(data,course,lesson - 1)
             for l in relation[course]:
                 count = count +1
-                recommendList[count] = getLessonFromCourseP(data,l)
+                recommendList[count] = getLessonFromCourse(data,l,"p")
             
             stemZRecommendList[currentCourse] = recommendList
         else:
@@ -129,7 +134,7 @@ for course in data:
                 recommendList[count] = getReactCourseName(data,course,lesson - 1)
             for l in relation[course]:
                 count = count +1
-                recommendList[count] = getLessonFromCourse(data,l)
+                recommendList[count] = getLessonFromCourse(data,l,"s")
             
             stemZRecommendList[currentCourse] = recommendList
 
