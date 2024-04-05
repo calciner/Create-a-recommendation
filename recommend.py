@@ -55,10 +55,15 @@ print(relation)
 for i in relation:
     NotInRelation = []
     for k in data:
+        if k == i:
+            continue;
         if k not in relation[i]:
             NotInRelation.append(k)
-    relation[i] = random.sample(list(relation[i]),3)
-    relation[i].extend(random.sample(NotInRelation,1))
+    if(len(NotInRelation) == 0):
+        relation[i] = random.sample(list(relation[i]),4)
+    else:
+        relation[i] = random.sample(list(relation[i]),3)
+        relation[i].extend(random.sample(NotInRelation,1))
 
 
 print(relation)
